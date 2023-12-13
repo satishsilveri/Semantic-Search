@@ -1,0 +1,9 @@
+data_path: Mental_Health_FAQ.csv 
+target_dir: /Users/satishsilveri/Documents/ML/Search/BEIR_RES
+models:
+    - thenlper/gte-large
+    - BAAI/bge-large-en-v1.5
+    - intfloat/e5-large-v2
+    
+batch_size: 100
+score_function: cos_sim
