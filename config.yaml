@@ -7,3 +7,9 @@ models:
     
 batch_size: 100
 score_function: cos_sim
+question_column: Questions
+answer_column: Answers
+negative_samples: True
+negative_sampler_model_id: random
+negative_sample_size: 10
+threshold_sample_fraction: 0.50
