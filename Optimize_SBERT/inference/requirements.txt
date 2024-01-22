@@ -1,0 +1,11 @@
+fastapi==0.109.0
+numpy==1.26.3
+onnx==1.15.0
+onnxruntime==1.16.3
+optimum==1.16.2
+protobuf==4.25.2
+sentence-transformers==2.2.2
+torch==2.1.2
+torchvision==0.16.2
+transformers==4.36.2
+uvicorn==0.26.0
