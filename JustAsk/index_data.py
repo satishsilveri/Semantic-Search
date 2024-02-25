@@ -90,7 +90,7 @@ class IndexData:
                 splitted_documents.append(temp_doc)
         
         # initialize vector database and add docs
-        text_db = Chroma.from_documents(docs = splitted_documents, collection_name="documents_collection", embedding_function=self.embed_data_obj.get_text_embedding())
+        text_db = Chroma.from_documents(documents = splitted_documents, collection_name="documents_collection", embedding=self.embed_data_obj.get_text_embedding())
 
         # convert to retriever
         retriever = text_db.as_retriever(search_type="similarity",search_kwargs={"k": k})
